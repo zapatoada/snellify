@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
 
-  "name": "Make America Kittens Again",
+  "name": "Snellify",
   "description": "Replaces images of key political figures with SNL versions.",
   "version": "0.0.1",
-  "options_page": "snellifyoptions.html",
+  "options_page": "options.html",
 
   "permissions": [
     "storage",
@@ -14,11 +14,11 @@
           "128": "snellify128.png" },
   "browser_action": {
   	"default_icon": { 
-	           "48": "snellify48.png",
+	     "48": "snellify48.png",
 		   "128": "snellify128.png" 
           },
           "default_title": "Snellify",      
-          "default_popup": "snellifyoptions.html"       
+          "default_popup": "options.html"       
         },        
   
   "background": {
