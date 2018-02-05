@@ -2,20 +2,22 @@
 
 // Saves options to chrome.storage
 function save_options() {
-  var blockPence = document.getElementById('blockpence').checked;
-  var blockFarage = document.getElementById('blockfarage').checked;
-  var blockLePen = document.getElementById('blocklepen').checked; 
-  var blockWilders = document.getElementById('blockwilders').checked; 
-  var blockBannon = document.getElementById('blockbannon').checked; 
-  var customBlock = document.getElementById('customblock').value; 
-  
+	var blocktrump = document.getElementById('blocktrump').checked;
+	var blockpence = document.getElementById('blockpence').checked;		
+	var blockbannon = document.getElementById('blockbannon').checked;
+	var blockspicer = document.getElementById('blockspicer').checked;
+	var blocksanders = document.getElementById('blocksanders').checked;
+	var blocksessions = document.getElementById('blocksessions').checked;
+	var blockcarson = document.getElementById('blockcarson').checked;
+
   chrome.storage.local.set({
-    blockPence: blockPence,
-    blockFarage: blockFarage,
-    blockLePen: blockLePen,
-    blockWilders: blockWilders,
-    blockBannon: blockBannon,
-    customBlock: customBlock
+	blocktrump,
+	blockpence,
+	blockbannon,
+	blockspicer,
+	blocksanders,
+	blocksessions,
+	blockcarson
   }, function() {
     // Update status to let user know options were saved.
     var status = document.getElementById('status');
@@ -32,21 +34,21 @@ function save_options() {
 function restore_options() {
   // Use default value 
   chrome.storage.local.get({
-    blockPence: false,
-    blockFarage: false,
-    blockLePen: false,
-    blockWilders: false,
-    blockBannon: false,
-    customBlock: false
+	blocktrump: true,
+	blockpence: true,
+	blockbannon: true,
+	blockspicer: true,
+	blocksanders: true,
+	blocksessions: true,
+	blockcarson: true
   }, function(items) {
-    document.getElementById('blockpence').checked = items.blockPence;
-    document.getElementById('blockfarage').checked = items.blockFarage;
-    document.getElementById('blocklepen').checked = items.blockLePen;
-    document.getElementById('blockwilders').checked = items.blockWilders;
-    document.getElementById('blockbannon').checked = items.blockBannon;
-    if (items.customBlock != false){
-	    document.getElementById('customblock').value = items.customBlock;
-    };
+    	document.getElementById('blocktrump').checked = items.blocktrump; 
+	document.getElementById('blockpence').checked = items.blockpence; 
+	document.getElementById('blockbannon').checked = items.blockbannon; 
+	document.getElementById('blockspicer').checked = items.blockspicer; 
+	document.getElementById('blocksanders').checked = items.blocksanders; 
+	document.getElementById('blocksessions').checked = items.blocksessions; 
+	document.getElementById('blockcarson').checked = items.blockcarson; 
   });
 }
 
