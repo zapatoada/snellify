@@ -8,7 +8,7 @@ function save_options() {
 	var blockspicer = document.getElementById('blockspicer').checked;
 	var blocksanders = document.getElementById('blocksanders').checked;
 	var blocksessions = document.getElementById('blocksessions').checked;
-	var blockcarson = document.getElementById('blockcarson').checked;
+	var blockconway = document.getElementById('blockconway').checked;
 
   chrome.storage.local.set({
 	blocktrump,
@@ -17,7 +17,7 @@ function save_options() {
 	blockspicer,
 	blocksanders,
 	blocksessions,
-	blockcarson
+	blockconway
   }, function() {
     // Update status to let user know options were saved.
     var status = document.getElementById('status');
@@ -40,7 +40,7 @@ function restore_options() {
 	blockspicer: true,
 	blocksanders: true,
 	blocksessions: true,
-	blockcarson: true
+	blockconway: true
   }, function(items) {
     	document.getElementById('blocktrump').checked = items.blocktrump; 
 	document.getElementById('blockpence').checked = items.blockpence; 
@@ -48,7 +48,7 @@ function restore_options() {
 	document.getElementById('blockspicer').checked = items.blockspicer; 
 	document.getElementById('blocksanders').checked = items.blocksanders; 
 	document.getElementById('blocksessions').checked = items.blocksessions; 
-	document.getElementById('blockcarson').checked = items.blockcarson; 
+	document.getElementById('blockconway').checked = items.blockconway; 
   });
 }
 

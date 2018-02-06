@@ -11,10 +11,10 @@ function DeMakaMenuClick(info, tab) {
         "currentWindow": true
     }, function (tabs) {
         chrome.tabs.sendMessage(tabs[0].id, {
-            "functiontoInvoke": "undoMAKA"
+            "functiontoInvoke": "undoSnellify"
         });
     });
 }
 
 
-var setMAKAmenu1 = chrome.contextMenus.create({"title": "Unsnellify, "contexts":["page"], "onclick": DeMakaMenuClick});
+var setMAKAmenu1 = chrome.contextMenus.create({"title": "Unsnellify", "contexts":["page"], "onclick": DeMakaMenuClick});

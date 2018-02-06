@@ -10,21 +10,23 @@
     "storage",
     "contextMenus"
   ],
-  "icons": { "48": "snellify48.png",
-          "128": "snellify128.png" },
+  "icons": { 
+    "48": "snellify48.png",
+    "128": "snellify128.png" 
+  },
   "browser_action": {
-  	"default_icon": { 
-	     "48": "snellify48.png",
-		   "128": "snellify128.png" 
-          },
-          "default_title": "Snellify",      
-          "default_popup": "options.html"       
-        },        
-  
+    "default_icon": { 
+      "48": "snellify48.png",
+      "128": "snellify128.png" 
+    },
+    "default_title": "Snellify",      
+    "default_popup": "options.html"       
+  },        
+
   "background": {
     "scripts": ["setmenu.js"]
   },
-          
+
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -32,6 +34,6 @@
     }
   ],
   "web_accessible_resources": [
-    "replacements/*.jpg"
+    "imgs/*.jpg"
   ]
 }
