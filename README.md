@@ -2,7 +2,7 @@
 
 This is the code for my Chrome extension:
 
-https://chrome.google.com/webstore/detail/jniaggapnckljlbpibldhfgklpmhpjao/
+https://chrome.google.com/webstore/detail/snellify/jniaggapnckljlbpibldhfgklpmhpjao
 
 .. that replaces images of political figures with their SNL counterparts.
 
