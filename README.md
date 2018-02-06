@@ -8,7 +8,6 @@ https://chrome.google.com/webstore/detail/jniaggapnckljlbpibldhfgklpmhpjao/
 
 Please feel free to copy / edit / reuse the code in any way you like.
 
-To use your own images, simply edit line 60 of maka.js. Thanks.
 
 
 Code blatantly stolen from #MAKA
