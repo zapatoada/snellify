@@ -2,7 +2,7 @@
 // v1.2.2
 // by Tom Royal 
 // tomroyal.com
-var snellifyTesting = true; // for debugging only
+var snellifyTesting = false; // for debugging only
 var searches = {};
 
 if (snellifyTesting) {
