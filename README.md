@@ -2,13 +2,12 @@
 
 This is the code for my Chrome extension:
 
-https://chrome.google.com/webstore/detail/jniaggapnckljlbpibldhfgklpmhpjao/
+https://chrome.google.com/webstore/detail/snellify/jniaggapnckljlbpibldhfgklpmhpjao
 
 .. that replaces images of political figures with their SNL counterparts.
 
 Please feel free to copy / edit / reuse the code in any way you like.
 
-To use your own images, simply edit line 60 of maka.js. Thanks.
 
 
 Code blatantly stolen from #MAKA
